@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iftakhar Ahmad | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6f91b.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary-color: #1a73e8;
+      --text-color: #333;
+      --bg-color: #f7f9fc;
+      --card-bg: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary-color: #90caf9;
+        --text-color: #e0e0e0;
+        --bg-color: #121212;
+        --card-bg: #1e1e1e;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), #4fc3f7);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    ul li::before {
+      content: "\2022";
+      color: var(--primary-color);
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-icons i {
+      margin-right: 8px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project h3 {
+      margin: 0.75rem;
+      color: var(--primary-color);
+    }
+    .project p {
+      margin: 0 0.75rem 1rem;
+    }
+    .download-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary-color);
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      z-index: 100;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Iftakhar Ahmad</h1>
+    <p><span id="typewriter"></span></p>
+  </header>
+
+  <div class="container">
+    <section class="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-map-marker-alt"></i> Sargodha, Pakistan</p>
+      <p><i class="fas fa-phone"></i> +92 316 4513324</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:iftakharahmad1458@gmail.com">iftakharahmad1458@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/iftakhar-ahmad-6a4b9a295" target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/iftakharahmad" target="_blank">GitHub</a></p>
+    </section>
+
+    <section>
+      <h2>About Me</h2>
+      <p>Computer Science graduate with a passion for Python development, machine learning, and web technologies. Built an AI-powered tomato disease detection system with CNN (ResNet-18) and have experience creating web apps and automation tools.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, C++, HTML, CSS</li>
+        <li>TensorFlow, Keras, OpenCV</li>
+        <li>Flask, WordPress</li>
+        <li>Git, Jupyter Notebook, Microsoft Office</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <p><strong>Python Developer Intern</strong> – ICT Trainings Institute (Jul 2025 – Present)</p>
+      <ul>
+        <li>Built Flask apps and automation tools</li>
+        <li>Integrated machine learning models</li>
+      </ul>
+      <p><strong>Freelance Web Developer</strong> (2023 – 2025)</p>
+      <ul>
+        <li>Created responsive WordPress websites</li>
+        <li>Handled client support and SEO</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p><strong>Tomato Care</strong> – AI-Based Disease Detection System</p>
+      <ul>
+        <li>Used CNN (ResNet-18) to detect tomato plant diseases</li>
+        <li>92% accuracy with Flask + OpenCV deployment</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Project Gallery</h2>
+      <div class="gallery">
+        <div class="project">
+          <img src="https://source.unsplash.com/300x180/?plant,ai" alt="Tomato Care Screenshot">
+          <h3>Tomato Care</h3>
+          <p>Real-time disease detection using ResNet-18.</p>
+        </div>
+        <div class="project">
+          <img src="https://source.unsplash.com/300x180/?python,code" alt="Flask App">
+          <h3>Python Flask App</h3>
+          <p>Internship automation tools built with Flask.</p>
+        </div>
+        <div class="project">
+          <img src="https://source.unsplash.com/300x180/?wordpress,website" alt="WordPress Site">
+          <h3>Freelance Site</h3>
+          <p>Client-ready SEO-optimized website.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Deep Learning Specialization – Coursera</li>
+        <li>Crash Course on Python – Google</li>
+        <li>Machine Learning with Python – IBM</li>
+        <li>Web Development with Flask – Udemy</li>
+        <li>C++ Fundamentals – LinkedIn Learning</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <ul>
+        <li>English – Fluent / Professional</li>
+        <li>Urdu – Native</li>
+        <li>Arabic, German, Chinese, French – Basic Level</li>
+      </ul>
+    </section>
+  </div>
+
+  <a class="download-btn" href="cv.pdf" download>
+    <i class="fas fa-download"></i> Download CV
+  </a>
+
+  <script>
+    // Typewriter effect
+    const words = ["Python Developer", "AI & ML Enthusiast", "Freelance Web Developer"];
+    let i = 0, j = 0, current = "", isDeleting = false;
+
+    function type() {
+      const display = document.getElementById("typewriter");
+      if (i < words.length) {
+        current = words[i];
+        if (!isDeleting && j <= current.length) {
+          display.innerHTML = current.substring(0, j++);
+        } else if (isDeleting && j > 0) {
+          display.innerHTML = current.substring(0, j--);
+        } else if (j === 0 && isDeleting) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        } else if (j === current.length + 1) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(type, isDeleting ? 80 : 150);
+    }
+    type();
+  </script>
+</body>
+</html>
